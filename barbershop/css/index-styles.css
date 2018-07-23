@@ -29,8 +29,7 @@ a {
     color: black;
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.breadcrumbs a:hover, .breadcrumbs a:focus {
     text-decoration: underline;
 }
 
@@ -48,65 +47,121 @@ a {
     border: none;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+.button:hover, .button:focus, .button:active {
     background-color: #663d15;
 }
 
+.main-header {
+    margin-bottom: 75px;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
     line-height: 20px;
+    background-color: transparent;
+}
+
+.main-header-logo {
+    order: 2;
+    width: 368px;
+    height: 153px;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
     background-color: #000;
 }
 
-.site-navigation,
-.user-navigation,
-.features-list,
-.news-list,
-.footer-social ul,
-.breadcrumbs,
-.catalog-list,
-.pagination-list {
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    
+    width: 620px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-navigation {
+    width: 140px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features{
+    margin-bottom: 80px;
+}
+
+.features-list{
+  display: flex;
+  justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-item{
+    text-align: center;
+    width: 300px;
+}
+
+.news-list, .footer-social ul, .breadcrumbs, .catalog-list, .pagination-list, .product-photo-preview, .product-info ul {
     list-style: none;
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation a, .user-navigation a {
     color: #fff;
 }
 
-.site-navigation a:hover,
-.user-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-navigation a:hover, .user-navigation a:hover, .site-navigation a:focus, .user-navigation a:focus {
     background-color: #242424;
 }
 
-.feature-item,
-.footer-social,
-.footer-copyright {
+.footer-social, .footer-copyright {
     text-align: center;
 }
 
-.feature-item h3,
-.index-columns h2,
-.modal h2,
-.page-title {
+.feature-item h3, .index-columns h2, .modal h2, .page-title {
     font-size: 30px;
     line-height: 42px;
 }
 
 .index-columns {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
     color: #000;
     background-color: #f8f5f2;
     background-image: url("../img/bckgr.png");
     background-repeat: repeat;
     background-position: 0 0;
+    margin-bottom: 35px;
+}
+
+.news, contacts{
+    width:380px;
 }
 
 .news-item time {
     text-transform: none;
+}
+
+.gallery, .apointment{
+    width: 300px;
 }
 
 .gallery-content {
@@ -130,7 +185,7 @@ a {
     border: none;
 }
 
-.filter legend {
+.filter legend, .product-info h3 {
     font-size: 24px;
     line-height: 30px;
 }
@@ -140,17 +195,16 @@ a {
     line-height: 18px;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label{
-color: #663d15;
+.filter-input:hover+label, .filter-input:focus+label {
+    color: #663d15;
 }
 
-.filter-input:disabled +label{
-    color:black;
+.filter-input:disabled+label {
+    color: black;
     opacity: 0.5;
 }
 
-.catalog-item{
+.catalog-item {
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -159,11 +213,11 @@ color: #663d15;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item a{
+.catalog-item a {
     color: black;
 }
 
-.catalog-item h3{
+.catalog-item h3 {
     font-size: 14px;
     line-height: 18px;
 }
@@ -172,39 +226,50 @@ color: #663d15;
     text-transform: none;
 }
 
-.catalog-item-price b{
+.catalog-item-price b {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     background-color: #e5e5e5;
 }
 
-.catalog-item-price .button{
-   
+.catalog-item-price .button {
     line-height: 20px;
     color: white;
 }
 
-.pagination-item a{
+.pagination-item a {
     color: white;
     background-color: black;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus,
-.pagination-item a:active{
+.pagination-item a:hover, .pagination-item a:focus, .pagination-item a:active {
     background-color: #663d15;
 }
 
-.pagination-item.pagination-item-current a,
-.pagination-item.pagination-item-сurrent a:hover,
-.pagination-item.pagination-item-сurrent a:focus,
-.pagination-item.pagination-item-сurrent a:active{
+.pagination-item.pagination-item-current a, .pagination-item.pagination-item-сurrent a:hover, .pagination-item.pagination-item-сurrent a:focus, .pagination-item.pagination-item-сurrent a:active {
     color: black;
     background-color: #fff;
 }
 
+.product-photo-preview li, .product-photo-full {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+    text-align: right;
+    color: #aeaeae;
+}
+
+.product-price b {
+    line-height: 20px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
 .main-footer {
+    margin-top: 65px;
+    padding: 60px 0;
     color: white;
     background-color: #222;
     background-image: url("../img/footer-bckgr.png");
@@ -212,22 +277,40 @@ color: #663d15;
     background-repeat: repeat;
 }
 
+.main-footer .container{
+    display: flex;
+}
+
+.footer-contacts{
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
 .footer-contacts a {
     color: white;
     text-decoration: underline;
 }
 
-.footer-contacts a:focus,
-.footer-contacts a:hover {
+.footer-contacts a:focus, .footer-contacts a:hover {
     text-decoration: none;
+}
+
+.footer-social{
+    width: 145px;
 }
 
 .social-button {
     color: #fff;
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
+.footer-copyright{
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+}
+
+.footer-copyright .button:hover, .footer-copyright .button:focus {
     color: #000;
     background-color: #fff;
 }
@@ -240,8 +323,7 @@ color: #663d15;
     background-position: 0 0;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.login-form input[type="text"], .login-form input[type="password"] {
     font: inherit;
     color: black;
     background-color: transparent;
@@ -254,8 +336,7 @@ color: #663d15;
     outline: none;
 }
 
-.login-checkbox:hover,
-.login-checkbox:focus {
+.login-checkbox:hover, .login-checkbox:focus {
     color: #663d15;
 }
 
@@ -264,8 +345,7 @@ color: #663d15;
     text-decoration: underline;
 }
 
-.restore:hover,
-.restore:focus {
+.restore:hover, .restore:focus {
     color: black;
     text-decoration: none;
 }
