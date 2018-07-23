@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+background-color: #663d15;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #000;
+}
+
+.site-navigation,
+.user-navigation,
+.features-list,
+.news-list,
+.footer-social ul {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #fff;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+.feature-item,
+.footer-social,
+.footer-copyright {
+    text-align: center;
+}
+
+.feature-item h3,
+.index-columns h2,
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    color: #000;
+    background-color: #f8f5f2;
+    background-image: url("../img/bckgr.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.gallery-content {
+    background-color: #ccc;
+    border: #fff 7px solid;
+}
+
+.apointment-item input{
+    font:inherit;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.apointment-item input:focus{
+    border-color: #663d15;
+    outline: none;/*? убирать или не убирать*/
+}
+
+.main-footer{
+    color: white;
+    background-color: #222;
+    background-image: url("../img/footer-bckgr.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer-contacts a{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-contacts a:focus,
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.social-button{
+    color:#fff;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+    color: #000;
+    background-color: #fff;
+}
+
+.modal{
+    color: black;
+    background-color: #f8f5f2;
+    background-image: url("../img/bckgr.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    font:inherit;
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
