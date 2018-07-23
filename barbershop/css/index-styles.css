@@ -25,6 +25,12 @@ a {
     text-decoration: none;
 }
 
+.breadcrumbs{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
 .breadcrumbs a {
     color: black;
 }
@@ -55,6 +61,11 @@ a {
     margin-bottom: 75px;
 }
 
+.inner-page .main-header{
+    margin-bottom:50px;
+    background-color: black;
+}
+
 .main-navigation {
     display: flex;
     flex-direction: column;
@@ -64,10 +75,22 @@ a {
     background-color: transparent;
 }
 
+.inner-page .main-navigation{
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 .main-header-logo {
     order: 2;
     width: 368px;
     height: 153px;
+}
+
+.inner-page .main-header-logo{
+    width: 111px;
+    height:24px;
+    padding: 23px 20px;
+    order: 0;
 }
 
 .main-navigation-wrapper {
@@ -88,7 +111,6 @@ a {
 }
 
 .site-navigation {
-    
     width: 620px;
     list-style: none;
     margin: 0;
@@ -96,10 +118,16 @@ a {
 }
 
 .user-navigation {
+    color:white;
     width: 140px;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.inner-page .user-navigation{
+    margin-left: auto;
+
 }
 
 .features{
@@ -138,6 +166,12 @@ a {
 .feature-item h3, .index-columns h2, .modal h2, .page-title {
     font-size: 30px;
     line-height: 42px;
+}
+
+.page-title{
+    margin:0;
+    padding: 0;
+    margin-bottom: 15px;
 }
 
 .index-columns {
@@ -181,6 +215,10 @@ a {
     /*? убирать или не убирать*/
 }
 
+.filters{
+    width: 180px;
+}
+
 .filter fieldset {
     border: none;
 }
@@ -204,9 +242,34 @@ a {
     opacity: 0.5;
 }
 
+.catalog{
+    width: 700px;
+}
+
+.catalog-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    }
+
+
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
 .catalog-item {
+    width:220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n){
+    margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -238,6 +301,11 @@ a {
     color: white;
 }
 
+.pagination-list{
+    margin: 0;
+    padding: 0;
+}
+
 .pagination-item a {
     color: white;
     background-color: black;
@@ -252,6 +320,14 @@ a {
     background-color: #fff;
 }
 
+.product-photos{
+    width: 460px;
+}
+
+.product-info{
+    width: 390px;
+}
+    
 .product-photo-preview li, .product-photo-full {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
@@ -275,6 +351,10 @@ a {
     background-image: url("../img/footer-bckgr.png");
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.inner-page .main-footer{
+    margin-top: 45px;
 }
 
 .main-footer .container{
