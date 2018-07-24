@@ -65,6 +65,9 @@ input[type="radio"].visually-hidden{
 }
 
 .button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 16px;
     font: inherit;
     text-align: center;
     vertical-align: middle;
@@ -76,6 +79,13 @@ input[type="radio"].visually-hidden{
 
 .button:hover, .button:focus, .button:active {
     background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled{
+    cursor:default;
+    opacity:0.5;
+    background: #000;
 }
 
 .main-header {
@@ -176,6 +186,7 @@ color: white;
 .feature-item{
     text-align: center;
     width: 300px;
+    
 }
 
 .news-list, .footer-social ul, .breadcrumbs, .catalog-list, .pagination-list, .product-photo-preview, .product-info ul {
@@ -198,10 +209,33 @@ color: white;
 .footer-social, .footer-copyright {
     text-align: center;
 }
+.feature-item h3{
+    margin: 0 0 60px 0;
+    position:relative;
+}
+
+.feature-item h3::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left:50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
 
 .feature-item h3, .index-columns h2, .modal h2, .page-title {
     font-size: 30px;
     line-height: 42px;
+}
+.index-columns h2{
+    margin:0 0 25px 0;
+}
+
+.feature-item p{
+    margin: 0 10px;
 }
 
 .login-link::before{
@@ -235,27 +269,74 @@ color: white;
     justify-content: space-between;
     color: #000;
     background-color: #f8f5f2;
-    background-image: url("../img/bckgr.png");
-    background-repeat: repeat;
-    background-position: 0 0;
+    background-image: url("../img/pattern-line.png"), url("../img/bckgr.png");
+    
+    background-repeat: no-repeat, repeat;
+    background-position: center, 0 0;
     margin-bottom: 35px;
 }
 
-.news, contacts{
+.news, .contacts{
     width:380px;
+}
+
+.news-list{
+    margin:0 0 25px 0;
+    padding: 0;
+}
+
+.news-item{
+    margin-bottom:25px;
+}
+
+.news-item p {
+ margin: 0;
 }
 
 .news-item time {
     text-transform: none;
 }
 
-.gallery, .apointment{
+.gallery,
+ .apointment{
     width: 300px;
 }
 
+.gallery-container{
+    position: relative;
+    height: 260px;
+}
+
 .gallery-content {
+    height: 164px;
+    margin:0;
     background-color: #ccc;
     border: #fff 7px solid;
+}
+
+.gallery-content img{
+    width:286px;
+    height: 164px;
+}
+
+.gallery-button{
+    box-sizing: border-box;
+    position:absolute;
+    bottom:0;
+    width:140px;
+    margin:0;
+}
+
+.gallery-button-back{
+    left:0;
+}
+
+.gallery-button-next{
+    right:0;
+}
+
+.contacts p{
+    margin: 0 0 25px 0;
 }
 
 .apointment-item input {
