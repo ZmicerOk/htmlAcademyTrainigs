@@ -630,9 +630,22 @@ input[type="radio"].visually-hidden {
     background-repeat: repeat;
     background-position: 0 0;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.modal-overlay{
+    display: none;/**/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-login {
+    display: none;/**/
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
@@ -708,9 +721,57 @@ padding: 10px 40px 10px 15px;
     background-position: 270px center;
     background-repeat: no-repeat;
 }
+
+.login-checkbox{
+    position: relative;
+    padding-left:30px;
+    cursor: pointer;
+}
+
 .login-checkbox:hover,
 .login-checkbox:focus {
     color: #663d15;
+}
+
+.login-form .login-help{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.login-checkbox input[type="checkbox"]+.checkbox-indicator{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid black;
+}
+
+.login-checkbox input[type="checkbox"]:focus+.checkbox-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator:before,
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator:after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left:1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator:before{
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator:after{
+transform: rotate(-45deg);
 }
 
 .restore {
@@ -722,4 +783,24 @@ padding: 10px 40px 10px 15px;
 .restore:focus {
     color: black;
     text-decoration: none;
+}
+
+.login-form .button{
+    width: 100%;
+    margin-right: 0;
+}
+
+.modal-map{
+    display: none;/**/
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    transform: translate(-50%, -50%);
+    border: 7px solid white;
+}
+
+.modal-map p{
+margin: 0;
+padding:0;
 }
