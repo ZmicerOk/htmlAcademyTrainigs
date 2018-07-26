@@ -28,6 +28,7 @@ a {
 img {
     width: 100%;
     height: auto;
+
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -47,8 +48,11 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
     padding: 0;
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .breadcrumbs a {
@@ -821,4 +825,25 @@ transform: rotate(-45deg);
 .modal-map p{
 margin: 0;
 padding:0;
+}
+
+.product-info li, .breadcrumbs li{
+    position: relative;
+    padding: 0 20px;
+}
+
+.breadcrumbs li:first-of-type {
+    margin-left: -20px;
+}
+
+.product-info li:before,
+.breadcrumbs li:not(:first-of-type):before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    transform: rotate(45deg);
 }
